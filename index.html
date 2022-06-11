@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer type="module" src="main.js"></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="inputContainer">
+                <h1>WEATHER APP</h1>
+                <div style="width: 100%">
+                    <p>Enter A City's Name</p>
+                    <input type="text" id="cityInput" >
+                </div>
+                <button id="citySumbit">Sumbit</button>
+                
+                
+            </div>
+            <img src="cloudBackground.avif" id="cloudBackground">
+            
+        </div>
+        <dialog class="modal" id="modal">
+            <h1 id="cityName" ></h1>
+            <div id ="tempContainer" style="grid-area: 2/1/2/1; border: 1px solid black;">
+                <div style = "width: 100%; height: 100%; text-align: center; font-size: 3em; color: lightblue; ">
+                    <p style="font-size: 1em; margin-top: 5%;">TEMPERATURE</p>
+                    <p id="temperature" style="padding: 20%;"></p>
+                </div>
+            </div>
+            <div id ="rainContainer" style="grid-area: 3/1/3/1; border: 1px solid black;" >
+                <div style = "width: 45%; height: 100%; text-align: center; font-size: 2em; color: lightblue; margin: 0; display: inline-block ">
+                    <p style="font-size: .5em; margin-top: 5%; ">PRECIPITATION</p>
+                    <p id="precip" style="padding: 20%;"></p>
+                </div>
+                <div style = "width: 45%; height: 100%; text-align: center; font-size: 2em; color: lightblue; margin: 0; display: inline-block ">
+                    <p style="font-size: .5em; margin-top: 5%;">HUMIDITY</p>
+                    <p id="humidity" style="padding: 20%;"></p>
+                </div>
+            </div>
+            <div id ="windContainer" style="grid-area: 4/1/4/1; border: 1px solid black; ">
+                <div style = "width: 45%; height: 100%; text-align: center; font-size: 2em; color: lightblue; margin: 0; display: inline-block; ">
+                    <p style="font-size: .5em; margin-top: 5%;">WIND SPEED</p>
+                    <p id="windSpeed" style="padding: 20%; "></p>
+                </div>
+                <div style = "width: 45%; height: 100%; text-align: center; font-size: 2em; color: lightblue; margin: 0; display: inline-block; "> 
+                    <p style="font-size: .5em; margin-top: 5%;">WIND DIRECTION</p> 
+                    <p id="windDirection" style="padding: 20%; "></p> 
+                </div>
+            </div>
+            <div id ="conditionContainer" style="grid-area: 2/2/5/2; border: 1px solid black; ">
+                <h1 id="conditionText" style="text-align:center; margin-top: 20%;"></h1>
+                <img id="conditionImg" src="">
+            </div>
+            <button id="exitModal" style="background-color: lightcoral; grid-area: 5/1/5/3; width: 50%; height: 50%;">EXIT</button>
+            
+        </dialog>
+
+        
+    </body>
+</html>
