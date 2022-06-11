@@ -12,7 +12,7 @@ const conditionImg = document.querySelector("#conditionImg")
 const exitModal = document.querySelector("#exitModal")
 citySumbit.addEventListener("click", () => {
   
-  let api = fetch(`http://api.weatherapi.com/v1/current.json?key=2bd297eb054b4dafa99162738220906&q&q=${cityInput.value}&aqi=no`)
+  let api = fetch(`https://api.weatherapi.com/v1/current.json?key=2bd297eb054b4dafa99162738220906&q&q=${cityInput.value}&aqi=no`)
     api
     .then(response => response.json())
     .then(data => {
